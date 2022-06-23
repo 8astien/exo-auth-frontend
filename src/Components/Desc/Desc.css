@@ -1,0 +1,29 @@
+.desc {
+    display: flex;
+    padding: 0 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.desc img {
+    max-width: 350px;
+}
+
+.text--container {
+    padding: 2rem;
+}
+
+.text--container > * {
+    margin-bottom: 1rem;
+}
+
+.text--container h3 {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .desc {
+        flex-direction: column;
+        align-items: center;
+    }
+}

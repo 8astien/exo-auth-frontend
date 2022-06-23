@@ -1,0 +1,51 @@
+.lower--band {
+    background-image: url('../../assets/bandbg.png');
+    background-repeat: repeat;
+    background-color: var(--orangebg);
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.26);
+    height: 120px;
+}
+
+.lower--band form {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form--item{
+    max-height: 50px;
+    border: none;
+    background-color: #fff;
+    padding: 10px;
+    margin: 1rem;
+    border: 1px solid #3A1603;
+    border-radius: 2px;
+}
+
+#quantity {
+    width: 100px;
+}
+
+input[type="submit"] {
+    border-radius: 25px;
+    padding: 0 20px;
+    filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.15));
+}
+
+@media (max-width: 768px) {
+    .lower--band {
+        height: auto;
+    }
+    .lower--band form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lower--band input[type="submit"] {
+        height: 40px;
+    }
+}

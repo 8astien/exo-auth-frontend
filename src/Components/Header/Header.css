@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 20px -4px rgba(0, 0, 0, 0.26);
+    z-index: 1;
+    position: relative;
+    height: 15vh;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+header img {
+    max-width: 50px;
+    padding: 25px;
+}

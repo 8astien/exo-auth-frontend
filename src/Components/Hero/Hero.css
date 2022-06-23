@@ -1,0 +1,25 @@
+.hero {
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+    background: radial-gradient(47.7% 82.04% at 50% 50%, rgba(252, 197, 70, 0.95) 23.88%, #FE734A 100%); 
+}
+
+.hero img {
+    max-width: 1000px;
+    display: block;
+    margin: 4rem auto 0 auto;
+}
+
+
+@media (max-width: 572px) {
+    .hero img {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 440px) {
+    .hero img {
+        max-width: 600px;
+    }
+}
