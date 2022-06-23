@@ -14,7 +14,7 @@ function App() {
       <Band />
       <Desc />
       <BandForm 
-        value = 'Acheter'
+        value='Acheter'
       />
       <Footer />
     </>
