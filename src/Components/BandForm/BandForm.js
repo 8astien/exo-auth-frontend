@@ -12,7 +12,7 @@ function BandForm(props) {
 					<option value='banana'>Banane - 250ml</option>
 				</select>
                 <input className="form--item" type='number' id='quantity' name='quantity'min="1" placeholder='Quantité' />
-                <input className="form--item" type="submit" />
+                <input className="form--item" type="submit" value='Acheter' />
 			</form>
 		</div>
 	);
