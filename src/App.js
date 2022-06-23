@@ -13,9 +13,7 @@ function App() {
       <Hero />
       <Band />
       <Desc />
-      <BandForm 
-        value='Acheter'
-      />
+      <BandForm />
       <Footer />
     </>
   );
