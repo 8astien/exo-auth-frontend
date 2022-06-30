@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import {
 	Animator,
 	ScrollContainer,
@@ -9,15 +9,31 @@ import {
 	Sticky,
 } from "react-scroll-motion";
 import "./Hero.css";
-import natural from "../../assets/natural.png";
+
 
 function Hero() {
+
+	const [product, setProduct] = useState();
+
+	const getApiData = async () => {
+		const response = await fetch(
+			"http://localhost:1337/api/products/product_4mvb4a2kjt"
+		).then((response) => response.json());
+
+		setProduct(response);
+	};
+	
+	useEffect(() => {
+		getApiData();
+	}, []);
+
+
 	return (
 		<div className='hero'>
 			<ScrollContainer>
 				<ScrollPage>
 					<Animator animation={batch(Fade(), Sticky(), Move(600, 0, 0, -580))}>
-          <img src={natural} alt="Illustration d'une bouteille de votre marque" />
+          <img src={product?.image} alt="Illustration d'une bouteille de votre marque" />
 					</Animator>
 				</ScrollPage>
 			
